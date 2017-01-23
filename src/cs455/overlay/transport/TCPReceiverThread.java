@@ -25,7 +25,6 @@ public class TCPReceiverThread implements Runnable {
 			//try to read in an integer that specifies the number of incoming bytes
 			try {
 				dataLength = din.readInt();
-				
 				//create a byte array of the same length of the dataLength
 				byte[] data = new byte[dataLength];
 				//reads the input stream into the byte array
